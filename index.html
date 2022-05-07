@@ -14,7 +14,7 @@
       <h1 class="header__title ">Научиться учиться</h1>
       <p class="header__subtitle ">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#" class="header__link">Узнать &rarr;</a></p>
       <img  class="header__main-illustration" src="./images/header-image.png" alt="Опять двойка Ф.П. Решетников">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <!-- Окончание блока 1 -->
     <!-- Описание пролем в обучении блок 2 -->
@@ -35,9 +35,7 @@
       <p class="section-subtitle ">Пять практик от Барбары Оакли</p>
       <ul class="cards">
         <li class="cards__item">
-          <div >
             <img class="cards__image" src="./images/cards-attention.png" alt=" Книга в руках"> 
-          </div>
           <h3 class="cards__title">Два вида внимания</h3>
           <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
         </li>
@@ -76,10 +74,10 @@
     <section class="video">
       <h2 class="section-title ">Видео на TED</h2>
       <p class="section-subtitle">Для тех кто любит прокрастинировать</p>
-      <div class="video__iframes">
-        <iframe src="https://www.youtube.com/watch?v=arj7oStGLkU" class="video__iframe"></iframe>
-        <iframe src="https://www.youtube.com/watch?v=5MgBikgcWnY&ab_channel=TEDxTalks" class="video__iframe"></iframe>
-      </div>
+        <ul class="video__iframes">
+          <li><iframe src="https://www.youtube.com/watch?v=arj7oStGLkU" class="video__iframe"></iframe></li>
+          <li><iframe src="https://www.youtube.com/watch?v=5MgBikgcWnY&ab_channel=TEDxTalks" class="video__iframe"></iframe></li>
+        </ul>
     </section>
     <!--Окончание блока 4-->
     <!--История Барбары Оакли блок 5-->
@@ -150,8 +148,12 @@
       <div class="khan__container">
         <p class="khan__author">Салман Хан</p>
         <h2 class="khan__title">Весь мир — школа</h2>
-        <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, 
-          кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+        <blockquote class="khan__quote">
+          <p>
+            Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, 
+            кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
+          </p>
+        </blockquote>
         <p class="khan__quote-author">Джордж Лукас</p>
         <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
         <div class="khan__book-container">
@@ -163,7 +165,7 @@
     <!--Окончание блока 8-->
     <!-- Кауфман блок 9 -->
     <section class="kaufman ">
-      <div class="kaufman__triangle"></div>
+      <div class="kaufman__triangle rotation"></div>
       <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
       <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
       <ul class="table table_theme_dark ">
@@ -214,20 +216,28 @@
     <section class="resources">
       <h2 class="section-title ">Полезные ресурсы</h2>
       <p class="section-subtitle ">Больше материалов о техниках и лайфхаках обучения</p>
-      <div class="resources__logo-zone">
-        <a class="resources__link" href="#">
-          <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Арзама">
-        </a>
-        <a class="resources__link" href="#">
-          <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Н+1">
-        </a>
-        <a class="resources__link" href="#">
-          <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Стрелка">
-        </a>
-        <a class="resources__link" href="#">
-          <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Полка">
-        </a>
-      </div>
+      <lu class="resources__logo-zone">
+        <li>
+          <a class="resources__link" href="#">
+            <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Арзама">
+          </a>
+        </li>
+        <li>
+          <a class="resources__link" href="#">
+            <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Н+1">
+          </a>
+        </li>
+        <li>
+          <a class="resources__link" href="#">
+            <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Стрелка">
+          </a>
+        </li>
+        <li>
+          <a class="resources__link" href="#">
+            <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Полка">
+          </a>
+        </li>
+      </lu>
     </section>
     <!--Окончание блока 10-->
     <!-- Подвал сайта блок 11 -->
